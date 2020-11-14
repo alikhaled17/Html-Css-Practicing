@@ -1,0 +1,49 @@
+p, #para1, .colortext
+{
+    color: red;
+}
+
+.h1 /* or h1 by tagname */
+{
+    margin-left: 20px;
+}
+
+div > h1
+{
+    margin: 0 25px 50px;
+    border: 1px black solid;
+    height: 100px;
+    text-transform: uppercase;
+}
+
+div > p
+{
+    color: black;
+    padding-top: 30px;
+    text-transform: capitalize;
+}
+
+table, th, tr
+{
+    border: 2px solid green;
+}
+
+td
+{
+    text-align: right;
+}
+
+th
+{
+    background-color: lightblue;
+}
+
+.h1-hidden
+{
+    display: none;
+}
+
+ul > li
+{
+    display: inline-block; 
+}
