@@ -1,3 +1,4 @@
 # ITi-SWD-Html-Css-Evalution
 
-for good session start with 00 file!
+## Note
+  ..for a good session start with 00 file!
