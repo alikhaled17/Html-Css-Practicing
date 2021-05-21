@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 1000px;
+  margin: 20px auto;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+}
+
+.box div img {
+  height: 200px;
+}
+
+.box div {
+  height: 200px;
+  overflow: hidden;
+  text-align: center;
+  float: left;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+}
+
+.box div.active {
+  height: 220px;
+  margin-top: -5px;
+  border-width: 5px 5px;
+  opacity: 1;
+  border: 5px solid crimson;
+}
+
+.box div:hover {
+  /* width: 100px; */
+  opacity: 1;
+}
+.box div.active img {
+  height: 225px;
+}

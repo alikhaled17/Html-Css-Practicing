@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#div1 {
+  width: 350px;
+  height: 370px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.imgDiv {
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+</style>
+
+</head>
+<body>
+
+<p>Drag the W3Schools image into the rectangle:</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<!-- <img id="drag1" src="01.png" draggable="true" ondragstart="drag(event)" width="150"> -->
+
+<div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img id="drag1" src="01.png" draggable="true" ondragstart="drag(event)" width="150">
+</div>
+
+<div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img id="drag2" src="02.png" draggable="true" ondragstart="drag(event)" width="150">
+</div>
+<div class="imgDiv" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img id="drag3" src="03.png" draggable="true" ondragstart="drag(event)" width="150">
+</div>
+
+<!-- <img id="drag2" src="02.png" draggable="true" ondragstart="drag(event)" width="150">
+<img id="drag3" src="03.png" draggable="true" ondragstart="drag(event)" width="150">
+ -->
+
+<script>
+    function allowDrop(e) {
+        e.preventDefault();
+    }
+
+    function drag(e) {
+        e.dataTransfer.setData("text", e.target.id);
+    }
+
+    function drop(e) {
+        e.preventDefault();
+        var data = e.dataTransfer.getData("text");
+        e.target.appendChild(document.getElementById(data));
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+.audio {
+  display: hidden;
+}
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+.header {
+  background-color: yellowgreen;
+  padding: 30px 10px;
+}
+.img {
+  float: left;
+  padding: 35px;
+}
+.img img {
+  border-radius: 50%;
+}
+
+.about-name {
+  padding: 35px 20px;
+}
+
+.chld-content {
+  width: 100%;
+}
+
+.cv-content {
+  float: left;
+}
+.cv-content > div {
+  float: left;
+  display: inline;
+}
+
+.sidebar {
+  width: 30%;
+}
+
+.content {
+  width: 70%;
+}
+
+.sidebar > div > h3 {
+  text-align: center;
+}
+.achevs h2,
+.worexp h2,
+.educat h2 {
+  background-color: yellowgreen;
+  padding: 10px 8px;
+}
+
+.endline {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.endline > div {
+  float: left;
+
+  width: 33%;
+  border: 20px solid #000;
+  border-width: 30px 0 0 0;
+}
+
+.endline div:nth-child(1) {
+  border-color: tomato;
+}
+.endline div:nth-child(2) {
+  border-color: yellowgreen;
+}
+.endline div:nth-child(3) {
+  border-color: teal;
+}
